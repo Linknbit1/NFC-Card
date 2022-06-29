@@ -1,0 +1,43 @@
+:root{
+  // container width
+  --container-width: 1124px;
+
+
+  // font sizes
+  --base-font-size: 10px;
+  --fs-16: 1.6rem;
+  --fs-18: 1.8rem;
+  --fs-20: 2rem;
+  --fs-24: 2.4rem;
+  --fs-26: 2.6rem;
+  --fs-28: 2.8rem;
+  --fs-30: 3rem;
+  --fs-36: 3.6rem;
+  --fs-38: 3.8rem;
+  --fs-85: 8.5rem;
+
+
+  // font weights
+  --regular: 400;
+  --medium: 500;
+  --semiBold: 600;
+  --bold: 700;
+  --extraBold: 800;
+
+  // colors
+  --black: 0,0,0;
+  --white: 255,255,255;
+  --purple: 114,57,214;
+  --purple-light: 236,228,250;
+  --gray: 241,241,241;
+  --gray-dark: 134,129,158;
+  --gray-light:213,213,213;
+
+  --clr-black:rgb(var(--black));
+  --clr-white:rgb(var(--white));
+  --clr-purple:rgb(var(--purple));
+  --clr-purple-light:rgb(var(--purple-light));
+  --clr-gray:rgb(var(--gray));
+  --clr-gray-dark:rgb(var(--gray-dark));
+  --clr-gray-light:rgb(var(--gray-light));
+}

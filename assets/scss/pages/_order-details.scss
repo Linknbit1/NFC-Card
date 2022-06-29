@@ -1,0 +1,116 @@
+#order-details{
+  .order-details{
+    padding: 6.7rem 0 11rem;
+
+    &__main{
+      @include flex(center,center,column);
+      max-width: 96rem;
+      margin: auto;
+      background-color: var(--clr-white);
+      box-shadow: 0px 3px 6px rgba(var(--black),0.16);
+      border-radius: 5px;
+      padding: 4.1rem 2rem 7.1rem;
+      text-align: center;
+
+      h2{
+        text-transform: capitalize;
+        margin-bottom: 1.2rem;
+      }
+
+      & > p{
+        font-size: var(--fs-18);
+        color: var(--clr-black);
+        font-weight: var(--semiBold);
+        margin-bottom: 4rem;
+      }
+    }
+
+    &__form{
+      max-width: 49.2rem;
+      margin: auto;
+
+      input:not([type=submit]){
+        border: 1px solid var(--clr-black);
+        border-radius: 5px;
+        height: 4.9rem;
+        padding: 1.3rem 2rem;
+        font-size: var(--fs-18);
+        font-weight: var(--medium);
+        width: 100%;
+        margin-bottom: 1.5rem;
+
+        &::placeholder{
+          font-size: var(--fs-16);
+          font-weight: var(--medium);
+          color: var(--clr-black);
+        }
+      }
+
+      .select{
+        position: relative;
+        width: 100%;
+        border: 1px solid var(--clr-black);
+        border-radius: 5px;
+        height: 4.9rem;
+        cursor: pointer;
+        margin-bottom: 2rem;
+
+        select{
+          border-radius: 5px;
+          cursor: pointer;
+          padding: 1.3rem 2rem;
+          border: none;
+          width: 100%;
+          font-size: var(--fs-18);
+          font-weight: var(--medium);
+          appearance: none;
+        }
+
+        &::after{
+          position: absolute;
+          content: '';
+          width: 1.7rem;
+          height: 0.8rem;
+          border-top: solid 1rem var(--clr-black);
+          border-left: solid 1rem transparent;
+          border-right: solid 1rem transparent;
+          top: 50%;
+          right: 1.9rem;
+          transform: translateY(-50%);
+          pointer-events: none;
+        }
+      }
+
+      label{
+        display: block;
+        font-size: var(--fs-18);
+        font-weight: var(--semiBold);
+        margin-bottom: 3rem;
+      }
+
+      .delivery-details{
+        @include flex(space-between,center,default);
+        flex-wrap: wrap;
+
+        input{
+          width: 48.4%;
+
+          &::placeholder{
+            text-transform: capitalize;
+          }
+
+          @include breakpoint(576){
+            width: 100%;
+          }
+        }
+
+      }
+
+      .btn-filled{
+        margin: 4.7rem auto 0;
+        text-transform: uppercase;
+        padding: 0.844em 6.042em;
+      }
+    }
+  }
+}

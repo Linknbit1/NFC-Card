@@ -1,0 +1,15 @@
+{
+  "name": "sass-structure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "node-sass assets/scss/style.scss style.css -w"
+  },
+  "author": "Usman",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  },
+  "dependencies": {}
+}

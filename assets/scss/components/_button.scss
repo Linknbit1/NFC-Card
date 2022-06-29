@@ -1,0 +1,32 @@
+[class*="btn"] {
+  @include flex(center,center,default);
+  max-width: max-content;
+  text-align: center;
+  text-decoration: none;
+  font-size: var(--fs-16);
+  font-weight: var(--bold);
+  border: 1px solid var(--clr-purple);
+  border-radius: 0.5rem;
+  transition: all ease 0.3s;
+  cursor: pointer;
+
+  &[class*="-transparent"]{
+    color: var(--clr-black);
+    background-color: var(--clr-white);
+
+    &:hover{
+      background-color: var(--clr-purple);
+      color: var(--clr-white);
+    }
+  }
+
+  &[class*="-filled"]{
+    background-color: var(--clr-purple);
+    color: var(--clr-white);
+
+    &:hover{
+      background-color: var(--clr-white);
+      color: var(--clr-black);
+    }
+  }
+}

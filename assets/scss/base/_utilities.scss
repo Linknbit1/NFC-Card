@@ -1,0 +1,10 @@
+[class^="container"] {
+  max-width: var(--container-width);
+  width: 100%;
+  margin: 0px auto;
+  padding: 0px 15px;
+
+  &[class*="--fluid"] {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,112 @@
+// BREAKPOINTS
+@mixin breakpoint($breakpoint) {
+  @if $breakpoint == 1680 {
+    @media only screen and (max-width: 1680px) {
+      @content;
+    } //1680
+  }
+  @if $breakpoint == 1440 {
+    @media only screen and (max-width: 1440px) {
+      @content;
+    } //1440
+  }
+  @if $breakpoint == 1366 {
+    @media only screen and (max-width: 1366px) {
+      @content;
+    } //1366
+  }
+  @if $breakpoint == 1200 {
+    @media only screen and (max-width: 1200px) {
+      @content;
+    } //1200
+  }
+  @if $breakpoint == 1080 {
+    @media only screen and (max-width: 1080px) {
+      @content;
+    } //1200
+  }
+  @if $breakpoint == 991 {
+    @media only screen and (max-width: 991px) {
+      @content;
+    } //991
+  }
+  @if $breakpoint == 767 {
+    @media only screen and (max-width: 767px) {
+      @content;
+    } //767
+  }
+  @if $breakpoint == 576 {
+    @media only screen and (max-width: 576px) {
+      @content;
+    } //576
+  }
+  @if $breakpoint == 440 {
+    @media only screen and (max-width: 440px) {
+      @content;
+    } //576
+  }
+}
+
+
+@mixin absolute($top, $right, $bottom, $left, $width, $height, $pseudo: false) {
+  @if $pseudo {
+    content: "";
+  }
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  width: $width;
+  height: $height;
+}
+
+
+@mixin img($width, $height) {
+  width: $width;
+  height: $height;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+@mixin line-clamp($line) {
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin flex($justify-content, $align-items, $flex-direction) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+
+  @if $flex-direction == row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  @if $flex-direction == column {
+    flex-direction: column;
+  }
+
+  @if $flex-direction == column-reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+@mixin content-container($max-width, $width, $margin, $padding) {
+  max-width: $max-width;
+  width: $width;
+  margin: $margin;
+  padding: $padding;
+}
+
+@mixin text-format($size, $line-height, $color, $font-weight, $text-transform) {
+  font-size: $size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  text-transform: $text-transform;
+  color: $color;
+}

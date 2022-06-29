@@ -1,0 +1,48 @@
+#admin-login{
+  .admin-login{
+
+    &__main{
+      background-color: var(--clr-gray-dark);
+
+      h2{
+        color: var(--clr-white);
+      }
+    }
+
+    &__inputs{
+
+      .input{
+        border-color: var(--clr-white);
+
+        input{
+          color: var(--clr-white);
+
+          &::placeholder{
+            color: var(--clr-white);
+          }
+        }
+
+        svg{
+          *{
+            fill: var(--clr-white);
+          }
+        }
+      }
+
+      .btn-transparent{
+        margin:3.4rem auto 4.4rem;
+        border-color: var(--clr-white);
+        text-transform: uppercase;
+        padding: 0.657em 2.76em;
+
+        &:hover{
+          background-color: transparent;
+        }
+      }
+    }
+
+    a{
+      color: var(--clr-white);
+    }
+  }
+}

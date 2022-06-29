@@ -1,0 +1,66 @@
+.footer{
+  padding: 5.3rem 0 4.22rem;
+  background-color: var(--clr-gray);
+
+  ul{
+    @include flex(center,center,default);
+
+    list-style: none;
+
+    a{
+      text-decoration: none;
+    }
+  }
+
+  &__logo{
+    max-width: 22.2rem;
+    margin: auto;
+
+    a{
+      text-decoration: none;
+
+      img{
+        @include img(100%,7.3rem);
+
+        object-fit: contain !important;
+      }
+    }
+  }
+
+  &__menu{
+    margin: 3.1rem 0 4.07rem;
+
+    ul{
+      li{
+        &:not(:last-of-type){
+          margin-right: 2.3rem;
+
+          @include breakpoint(767){
+            margin: 0 0 2rem;
+          }
+        }
+
+        a{
+          color: var(--clr-black);
+          font-size: var(--fs-16);
+          font-weight: var(--semiBold);
+          text-transform: capitalize;
+        }
+      }
+
+      @include breakpoint(767){
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__social{
+    ul{
+      li{
+        &:not(:last-of-type){
+          margin-right: 1.5rem;
+        }
+      }
+    }
+  }
+}

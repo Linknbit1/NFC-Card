@@ -1,0 +1,41 @@
+#order-placed{
+  .order-placed{
+    padding: 7.1rem 0rem 10.9rem;
+
+    &__main{
+      text-align: center;
+      background-color: var(--clr-white);
+      padding: 7rem 2.4rem 5.5rem;
+      box-shadow: 0px 3px 6px rgba(var(--black),0.16);
+      border-radius: 5px;
+      max-width: 47.4rem;
+      margin: auto;
+
+      span.svg{
+        display: block;
+        width: 8.9rem;
+        height: 8.9rem;
+        margin:0 auto 2.42rem;
+
+        svg{
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      h3{
+        font-size: var(--fs-28);
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: var(--extraBold);
+        color: var(--clr-black);
+        margin-bottom: 1.5rem;
+      }
+
+      p{
+        font-size: var(--fs-18);
+        font-weight: var(--semiBold);
+        color: var(--clr-black);
+      }
+    }
+  }
+}

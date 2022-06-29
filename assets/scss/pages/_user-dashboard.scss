@@ -1,0 +1,198 @@
+#user-dashboard{
+  .user-dashboard{
+    padding: 6.9rem 0 7.8rem;
+
+    &__main{
+      @include flex(null,null,null);
+      width: 100%;
+      box-shadow: 0px 3px 6px rgba(var(--black),0.16);
+      border-radius: 5px;
+      background-color: var(--clr-white);
+      max-width: 93.2rem;
+      margin: auto;
+    }
+
+    &__left{
+      padding: 2.3rem 0rem 5.8rem;
+      min-width: max-content;
+      padding-right: 1.5rem;
+      border-right: 1px solid var(--clr-gray);
+      flex:1;
+      ul{
+        list-style: none;
+
+        li{
+          :is(a,button){
+            font-size: var(--fs-16);
+            font-weight: var(--semiBold);
+            padding-left: 1.5rem;
+            text-transform: capitalize;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+
+            &.active{
+              border-left: 3px solid var(--clr-gray-dark);
+              margin-left: -3px;
+            }
+          }
+
+
+          &:not(:last-of-type){
+            margin-bottom: 3rem;
+          }
+        }
+      }
+    }
+
+    &__right{
+      max-width: 73.8rem;
+      width: 100%;
+      margin-left: auto;
+      padding-bottom: 5rem;
+
+      form{
+        .cover-image{
+          @include flex(center,center,null);
+          background-color: var(--clr-gray-dark);
+          position: relative;
+          padding: 2rem;
+          height: 18.4rem;
+
+          input{
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            inset: 0;
+          }
+
+          span{
+            &>svg{
+              margin-right: 2.3rem;
+            }
+
+            &:last-of-type{
+              font-size: var(--fs-16);
+              color: var(--clr-white) !important;
+              font-weight: var(--medium);
+
+              a{
+                color: var(--clr-white) !important;
+                text-decoration: underline;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+
+        .image{
+          @include flex(center,center,null);
+          background-color: var(--clr-gray-dark);
+          border: 3px solid var(--clr-white);
+          border-radius: 50%;
+          width: 11.7rem;
+          height: 11.7rem;
+          position: relative;
+          top: -5.6rem;
+          left: 4.2rem;
+
+          input{
+            opacity: 0;
+            position: absolute;
+            inset: 0;
+          }
+        }
+
+        .inputs{
+          @include flex(center,center,column);
+          padding: 3.8rem 5rem 20rem;
+          margin-top: -5.6rem;
+          gap: 1.5rem;
+
+          input:not([type="submit"]),textarea{
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid var(--clr-black);
+            height: 4.9rem;
+            padding: 1rem 3.5rem;
+            font-size: var(--fs-16);
+            color: var(--clr-black);
+            font-weight: var(--medium);
+
+            &::placeholder{
+              font-size: var(--fs-16);
+              color: var(--clr-black);
+              font-weight: var(--medium);
+              font-family: 'Nunito', sans-serif;
+            }
+          }
+
+          textarea{
+            min-height: 10.7rem;
+            resize: vertical;
+          }
+
+          .email-phone{
+            @include flex(null,center,null);
+            width: 100%;
+
+            input{
+              width: 100%;
+              &[type="email"]{
+                margin-right: 2rem;
+              }
+            }
+          }
+
+          .social{
+            @include flex(null,center,null);
+            flex-wrap: wrap;
+            width: 100%;
+
+            input{
+              max-width: 50%;
+              min-width: 48%;
+              flex: 1;
+              margin-bottom: 1.5rem;
+
+              &:nth-of-type(odd){
+                margin-right: 2rem;
+              }
+            }
+          }
+
+          .buttons{
+            @include flex(null,center,null);
+
+            .btn-transparent{
+              color: var(--clr-purple);
+              border: 2px solid;
+              margin-right: 2rem;
+              padding: 0.782em  7.319em;
+              text-transform: uppercase;
+
+              &:hover{
+                color: var(--clr-white);
+              }
+            }
+
+            .btn-filled{
+              text-transform: uppercase;
+              padding: 0.782em  8.3em;
+              border: 2px solid;
+
+              &:hover{
+                color: var(--clr-purple);
+              }
+            }
+          }
+        }
+      }
+
+      .change-password{
+        padding: 3rem 5rem 0rem;
+      }
+    }
+  }
+}

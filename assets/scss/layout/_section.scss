@@ -1,0 +1,367 @@
+.admin-login,.user-login{
+  padding: 7.1rem 0 13.4rem;
+
+  &__main{
+    max-width: 47.4rem;
+    width: 100%;
+    margin: auto;
+    border-radius: 0.5rem;
+    padding: 3.1rem 1.5rem 7.891rem;
+    box-shadow: 0px 3px 6px rgba(var(--black),0.16);
+
+    h2{
+      text-transform: capitalize;
+      color: var(--clr-black);
+      margin-bottom: 1.34166em;
+      text-align: center;
+    }
+  }
+
+  &__inputs{
+    max-width: 34.4rem;
+    margin: auto;
+
+    .input{
+      width: 100%;
+      position: relative;
+      border-radius: 1rem;
+      height: 4.9rem;
+      border: 0.2rem solid var(--clr-black);
+
+      &:not(:last-of-type){
+        margin-bottom: 2.18rem;
+      }
+
+      input{
+        background: transparent;
+        border: none;
+        width: 85%;
+        padding:0 0.5555em;
+        height: 100%;
+        font-size: var(--fs-18);
+        color: var(--clr-black);
+        font-weight: var(--semiold);
+
+        &::placeholder{
+          font-size: var(--fs-18);
+          color: var(--clr-black);
+          font-weight: var(--semiBold);
+          font-family: 'Nunito', sans-serif;
+        }
+      }
+
+      svg{
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+
+        *{
+          fill: var(--clr-black);
+        }
+      }
+    }
+  }
+
+  a{
+    display: block;
+    font-size: var(--fs-16);
+    font-weight: var(--semiBold);
+    text-decoration: none;
+    color: var(--clr-black);
+    text-align: center;
+  }
+}
+
+.logout-modal {
+  @include flex(center,center,default);
+  position: fixed;
+  inset: 0;
+  background: rgba(var(--white),0.8);
+  z-index: 9999;
+
+  &__main {
+    @include flex(center,center,column);
+    max-width: 64.6rem;
+    margin: auto;
+    box-shadow: 0px 3px 6px rgba(var(--black),0.16);
+    border-radius: 5px;
+    padding: 3.8rem 2.5rem 4.1rem;
+    background-color: var(--clr-white);
+
+    .logout-icon {
+      @include flex(null,center,default);
+      margin-bottom: 3.5rem;
+
+      span{
+        &.svg{
+          width: 6.5rem;
+          height: 6.5rem;
+          margin-right: 2.3rem;
+
+          svg{
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        &:last-of-type {
+          font-size: var(--fs-20);
+          font-weight: var(--medium);
+          color: var(--clr-black);
+        }
+      }
+    }
+
+    & > span {
+      font-size: var(--fs-26);
+      font-weight: var(--semiBold);
+      margin-bottom: 4.8rem;
+      display: block;
+      color: var(--clr-black);
+      text-align: center
+    }
+
+    .logout-buttons {
+      @include flex(center,center,default);
+
+      a{
+        &.btn-transparent {
+          margin-right: 2.8rem;
+          color: var(--clr-purple);
+          text-transform: uppercase;
+          padding: 0.719em 5.377em;
+
+          &:hover{
+            color: var(--clr-white);
+          }
+
+          @include breakpoint(767){
+            margin: 3rem auto 0;
+          }
+        }
+
+        &.btn-filled {
+          padding: 0.719em 5.081em;
+          text-transform: uppercase;
+
+          &:hover {
+            color: var(--clr-purple);
+          }
+        }
+
+      }
+
+      @include breakpoint(767){
+        flex-direction: column-reverse;
+      }
+    }
+  }
+}
+
+.change-password{
+  & > span{
+    font-size: var(--fs-16);
+    display: block;
+    margin-bottom: 3rem;
+    color: var(--clr-gray-dark);
+    text-transform: uppercase;
+  }
+
+  form{
+    padding-left: 4rem;
+
+    & > input, .input input{
+      background: transparent;
+      border: 0.1rem solid var(--clr-black);
+      width: 31.2rem;
+      border-radius: 1rem;
+      height: 4.9rem !important;
+      padding:0 1.2em;
+      height: 100%;
+      font-size: var(--fs-16);
+      color: var(--clr-black);
+      font-weight: var(--medium);
+      margin-bottom: 1rem;
+
+      &::placeholder{
+        font-size: var(--fs-16);
+        color: var(--clr-black);
+        font-weight: var(--medium);
+        font-family: 'Nunito', sans-serif;
+      }
+    }
+
+    .input{
+      width: 31.2rem;
+      position: relative;
+      border-radius: 1rem;
+      height: 4.9rem;
+      border: 0.1rem solid var(--clr-black);
+
+      &:not(:last-of-type){
+        margin-bottom: 1rem;
+      }
+      input{
+        border: none;
+        width: 85%;
+      }
+
+      svg{
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+
+        *{
+          fill: var(--clr-purple);
+        }
+      }
+    }
+
+  }
+
+  &__buttons{
+    @include flex(null,center,null);
+    margin-top: 6.2rem;
+
+    .btn-transparent{
+      text-transform: uppercase;
+      margin-right: 2rem;
+      color: var(--clr-purple) !important;
+      padding: 0.844em 0.719em;
+
+      &:hover{
+        color: var(--clr-white) !important;
+      }
+    }
+
+    .btn-filled{
+      text-transform: uppercase;
+      padding: 0.844em 6.051em;
+
+      &:hover{
+        color: var(--clr-purple) !important;
+      }
+    }
+  }
+}
+
+.card-modal{
+  margin-top: 3rem;
+  &__main{
+    .images{
+      padding: 1.5rem 1.5rem 0rem;
+
+      .cover-image{
+        width: 100%;
+        height: 28.7rem;
+        background-color: var(--clr-gray-dark);
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+
+        img{
+          @include img(100%,100%);
+        }
+      }
+
+      .profile-image{
+        width: 16rem;
+        height: 16rem;
+        border: 3px solid var(--clr-white);
+        border-radius: 50%;
+        position: relative;
+        top: -8rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--clr-gray-dark);
+        margin-bottom: 3.9rem;
+      }
+    }
+
+    .text{
+      max-width: max-content;
+      text-align: center;
+      margin: -8rem auto 6rem;
+      color: var(--clr-black);
+
+      .info{
+        margin-bottom: 3.9rem;
+        max-width: 57.7rem;
+        font-family: 'Nunito Sans', sans-serif;
+        margin: auto;
+
+        h3{
+          font-size: var(--fs-30);
+          font-weight: var(--extraBold);
+          text-transform: capitalize;
+        }
+
+        .title{
+          text-transform: capitalize;
+          font-size: var(--fs-20);
+          margin-bottom: 1rem;
+          display: block;
+        }
+
+        .description{
+          font-size: var(--fs-16);
+
+        }
+      }
+
+      .contact{
+        @include flex(space-between,center,null);
+        margin-bottom: 6.5rem;
+
+        div{
+          @include flex(center,center,null);
+
+          &:not(:last-of-type){
+            margin-right: 3rem;
+          }
+          span{
+            display: block;
+            font-size: var(--fs-16);
+            font-weight: var(--medium);
+            color: var(--clr-black);
+
+            &.svg{
+              margin-right: 1rem;
+
+              svg{
+                display: block;
+                *{
+                  fill: var(--clr-black);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .social{
+        @include flex(center,center,null);
+        span{
+          display: block;
+          width: 3.2rem;
+          height: 3.2rem;
+
+          &:not(:last-of-type){
+            margin-right: 1.5rem;
+          }
+          
+          &.svg{
+            svg{
+              *{
+                fill: var(--clr-black);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

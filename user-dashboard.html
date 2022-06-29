@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800;600&family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Admin Login</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__main">
+        <div class="header__logo">
+          <a href="/"><img src="./assets/img/header-logo.png" alt="Logo"></a>
+        </div>
+
+        <div class="header__menu" id="nav">
+          <div class="header__nav">
+            <ul>
+              <li><a href="#">pricing</a></li>
+
+              <li><a href="#">faqs</a></li>
+
+              <li><a href="#">blog</a></li>
+            </ul>
+          </div>
+
+          <div class="header__buttons">
+            <a href="#" class="btn-transparent">Login</a>
+
+            <a href="#" class="btn-filled">Create a Card</a>
+          </div>
+        </div>
+
+
+        <div class="header__toggler" id="toggler">
+          <div class="hamburger" id="hamburger-1">
+            <span class="line"></span>
+
+            <span class="line"></span>
+
+            <span class="line"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="pageWrapper" id="user-dashboard">
+    <div class="user-dashboard">
+      <div class="container">
+        <div class="user-dashboard__main">
+          <div class="user-dashboard__left">
+            <ul class="nav-tab">
+
+              <li class="active"><a>profile</a></li>
+
+              <li><a>change password</a></li>
+            </ul>
+          </div>
+          <div class="user-dashboard__right">
+            <div class="tab">
+              <div class="tab-content">
+                <div class="content">
+                  <form>
+                    <div class="cover-image">
+                      <span class="svg"><svg xmlns="http://www.w3.org/2000/svg" width="38.997" height="35.757" viewBox="0 0 38.997 35.757"><g id="Group_71" data-name="Group 71" transform="translate(-1176.058 -932.716)"><path id="Path_109" data-name="Path 109" d="M1272.14,936.241v18.976a.327.327,0,0,0-.059.092,4.049,4.049,0,0,1-4.219,3.413q-12,0-24,0a4.069,4.069,0,0,1-4.239-4.214q-.013-8.782.007-17.565a4.866,4.866,0,0,1,.234-1.494,4.023,4.023,0,0,1,4.018-2.732q11.755,0,23.509,0c.279,0,.559,0,.838.008a4.024,4.024,0,0,1,3.695,2.758C1272,935.731,1272.067,935.988,1272.14,936.241Zm-18.8,13.372c.123-.142.214-.245.3-.351q2.817-3.379,5.634-6.758a2.854,2.854,0,0,1,4.622-.013q2.307,2.688,4.61,5.379c.1.116.2.227.355.394.011-.161.02-.223.02-.285q0-5.543,0-11.085c0-.657-.31-.938-1.016-.938q-11.98,0-23.961,0c-.74,0-1.028.3-1.028,1.045q0,7.352,0,14.7v.4c.152-.142.245-.223.331-.31q2.008-2.006,4.015-4.013a2.856,2.856,0,0,1,4.313-.005C1252.136,948.374,1252.724,948.988,1253.337,949.614Z" transform="translate(-57.085)" fill="#fff"/><path id="Path_110" data-name="Path 110" d="M1209.8,1063.176c-.55,1.732-1.029,3.43-1.631,5.083a3.561,3.561,0,0,1-4.314,2.1q-7.223-1.916-14.439-3.859-5.217-1.4-10.434-2.791a3.69,3.69,0,0,1-2.73-4.87q1.829-6.122,3.665-12.241a.578.578,0,0,1,.173-.3v.4c0,3.416-.027,6.833.009,10.248a6.141,6.141,0,0,0,6.25,6.241q6.344-.007,12.687,0H1209.8Z" transform="translate(0 -102.014)" fill="#fff"/><path id="Path_111" data-name="Path 111" d="M1290.815,980.655a3.246,3.246,0,1,1-3.24,3.249A3.25,3.25,0,0,1,1290.815,980.655Z" transform="translate(-100.163 -43.058)" fill="#fff"/></g></svg></span>
+
+                      <span>Drag and drop or <a>browse</a></span>
+
+                      <input type="file">
+                    </div>
+
+                    <div class="image">
+                      <span class="svg"><svg xmlns="http://www.w3.org/2000/svg" width="29.811" height="27.944" viewBox="0 0 29.811 27.944"><g id="camera" transform="translate(0 0)"><path id="_-Color" data-name="🎨-Color" d="M20.571,2.5a2.8,2.8,0,0,1,2.371,1.315l1.889,3.028h2.942a4.037,4.037,0,0,1,4.037,4.037V26.41a4.037,4.037,0,0,1-4.037,4.037H6.037A4.037,4.037,0,0,1,2,26.41V10.884A4.037,4.037,0,0,1,6.037,6.847h3.19l1.717-2.954A2.8,2.8,0,0,1,13.361,2.5Zm0,1.863h-7.21a.932.932,0,0,0-.726.347l-.08.116L10.569,8.247a.932.932,0,0,1-.805.463H6.037a2.174,2.174,0,0,0-2.174,2.174V26.41a2.174,2.174,0,0,0,2.174,2.174H27.774a2.174,2.174,0,0,0,2.174-2.174V10.884A2.174,2.174,0,0,0,27.774,8.71H24.315a.932.932,0,0,1-.79-.438L21.361,4.8A.932.932,0,0,0,20.571,4.366ZM16.905,11.2a6.832,6.832,0,1,1-6.832,6.832A6.832,6.832,0,0,1,16.905,11.2Zm0,1.863a4.968,4.968,0,1,0,4.968,4.968A4.969,4.969,0,0,0,16.905,13.059Z" transform="translate(-2 -2.503)" fill="#fff"/></g></svg></span>
+
+                      <input type="file">
+                    </div>
+
+                    <div class="inputs">
+                      <input type="text" placeholder="Full Name">
+
+                      <textarea placeholder="About"></textarea>
+
+                      <div class="email-phone">
+                        <input type="email" placeholder="Email">
+
+                        <input type="number" placeholder="Phone Number">
+                      </div>
+
+                      <input type="text" placeholder="Website Link">
+
+                      <div class="social">
+                        <input type="text" placeholder="Facebook">
+                        <input type="text" placeholder="Twitter">
+                        <input type="text" placeholder="Instagram">
+                        <input type="text" placeholder="Linkedin">
+                        <input type="text" placeholder="Dribble">
+                        <input type="text" placeholder="Behance">
+                        <input type="text" placeholder="Github">
+                        <input type="text" placeholder="Linktree">
+                      </div>
+
+                      <div class="buttons">
+                        <input class="btn-transparent"  type="submit" value="preview">
+
+                        <input type="submit" class="btn-filled" value="save">
+
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="content">
+                  <div class="change-password">
+                    <span>change password</span>
+
+                    <form action="">
+                      <input type="password" placeholder="Current Password">
+
+                      <div class="input">
+                        <input type="password" placeholder="New Password">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30.579" height="20.386" viewBox="0 0 30.579 20.386"><path id="Password_eye_2" data-name="Password eye 2" d="M19.112,14.193a3.822,3.822,0,1,1-3.822-3.822A3.827,3.827,0,0,1,19.112,14.193Zm11.467-.572s-5.418,10.765-15.27,10.765C6.16,24.386,0,13.621,0,13.621S5.665,4,15.309,4C25.112,4,30.579,13.621,30.579,13.621Zm-8.919.572a6.371,6.371,0,1,0-6.371,6.371A6.378,6.378,0,0,0,21.66,14.193Z" transform="translate(0 -4)" fill="#fff"/></svg>
+                      </div>
+
+                      <div class="input">
+                        <input type="password" placeholder="Confirm Password">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30.579" height="20.386" viewBox="0 0 30.579 20.386"><path id="Password_eye_2" data-name="Password eye 2" d="M19.112,14.193a3.822,3.822,0,1,1-3.822-3.822A3.827,3.827,0,0,1,19.112,14.193Zm11.467-.572s-5.418,10.765-15.27,10.765C6.16,24.386,0,13.621,0,13.621S5.665,4,15.309,4C25.112,4,30.579,13.621,30.579,13.621Zm-8.919.572a6.371,6.371,0,1,0-6.371,6.371A6.378,6.378,0,0,0,21.66,14.193Z" transform="translate(0 -4)" fill="#fff"/></svg>
+                      </div>
+
+                      <div class="change-password__buttons">
+                        <input value="cancel" class="btn-transparent">
+
+                        <input type="submit" value="save" class="btn-filled">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__main">
+        <div class="footer__logo">
+          <a href="#" class="logo">
+            <img src="./assets/img/header-logo.png" alt="">
+          </a>
+        </div>
+
+        <div class="footer__menu">
+          <ul>
+            <li><a href="#">item 1</a></li>
+            <li><a href="#">item 2</a></li>
+            <li><a href="#">item 3</a></li>
+            <li><a href="#">item 4</a></li>
+            <li><a href="#">item 5</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__social">
+          <ul>
+            <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="18.142" height="18.142" viewBox="0 0 18.142 18.142"><path id="Path_78" data-name="Path 78" d="M19.145,2H3A1,1,0,0,0,2,3V19.145a1,1,0,0,0,1,1h8.69v-7.03H9.33V10.391h2.359V8.35a3.3,3.3,0,0,1,3.52-3.628,18.379,18.379,0,0,1,2.114.109V7.279H15.879c-1.143,0-1.361.544-1.361,1.333v1.751H17.24l-.354,2.721H14.518v7.057h4.626a1,1,0,0,0,1-1V3a1,1,0,0,0-1-1Z" transform="translate(-2 -2)" fill="#281f39"/></svg></a></li>
+
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18.033" height="18.142" viewBox="0 0 18.033 18.142"><path id="Path_79" data-name="Path 79" d="M18.76,2H3.393A1.315,1.315,0,0,0,2.06,3.3V18.845a1.315,1.315,0,0,0,1.333,1.3H18.76a1.315,1.315,0,0,0,1.333-1.3V3.3A1.315,1.315,0,0,0,18.76,2ZM7.53,17.185H4.809V9.021H7.53ZM6.169,7.878h0a1.415,1.415,0,1,1,0-2.83,1.424,1.424,0,1,1,0,2.83Zm11.176,9.307H14.623V12.8c0-1.1-.39-1.814-1.379-1.814a1.5,1.5,0,0,0-1.4.989,1.814,1.814,0,0,0-.091.662v4.536H9.036V9.012h2.721v1.152A2.721,2.721,0,0,1,14.215,8.8c1.814,0,3.13,1.17,3.13,3.683Z" transform="translate(-2.06 -2)" fill="#281f39"/></svg></a></li>
+
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="18.294" height="18.294" viewBox="0 0 18.294 18.294"><path id="Path_80" data-name="Path 80" d="M11.147,8.878a2.268,2.268,0,1,0,2.268,2.268A2.268,2.268,0,0,0,11.147,8.878ZM20.23,6.637a5.973,5.973,0,0,0-.384-2.067,3.659,3.659,0,0,0-2.122-2.122,5.973,5.973,0,0,0-2.067-.384C14.476,2,14.129,2,11.147,2s-3.329,0-4.509.064a5.973,5.973,0,0,0-2.067.384A3.659,3.659,0,0,0,2.448,4.57a5.973,5.973,0,0,0-.384,2.067C2,7.817,2,8.165,2,11.147s0,3.329.064,4.509a6.275,6.275,0,0,0,.384,2.076,3.6,3.6,0,0,0,.832,1.281,3.558,3.558,0,0,0,1.29.832,5.973,5.973,0,0,0,2.067.384c1.18.064,1.528.064,4.509.064s3.329,0,4.509-.064a5.973,5.973,0,0,0,2.067-.384,3.558,3.558,0,0,0,1.29-.832,3.6,3.6,0,0,0,.832-1.281,6.037,6.037,0,0,0,.384-2.076c.064-1.18.064-1.528.064-4.509s0-3.329-.064-4.509Zm-2.323,7.317A5.241,5.241,0,0,1,17.55,15.6,3.531,3.531,0,0,1,15.6,17.55a5.241,5.241,0,0,1-1.656.32h-5.6a5.241,5.241,0,0,1-1.656-.32A3.4,3.4,0,0,1,4.744,15.6a5.022,5.022,0,0,1-.311-1.656c0-.723,0-.915,0-2.8v-2.8a5.022,5.022,0,0,1,.311-1.656,3.211,3.211,0,0,1,.787-1.2,3.284,3.284,0,0,1,1.162-.75,5.241,5.241,0,0,1,1.656-.32h5.6a5.241,5.241,0,0,1,1.656.32A3.4,3.4,0,0,1,17.55,6.692a5.241,5.241,0,0,1,.32,1.656c0,.723,0,.915,0,2.8s.064,2.076.037,2.8ZM16.443,7.15a2.177,2.177,0,0,0-1.29-1.29,3.659,3.659,0,0,0-1.262-.2H8.4A3.659,3.659,0,0,0,7.141,5.9a2.177,2.177,0,0,0-1.29,1.244A3.906,3.906,0,0,0,5.659,8.4v5.488A3.906,3.906,0,0,0,5.9,15.153a2.177,2.177,0,0,0,1.29,1.29,3.906,3.906,0,0,0,1.217.238h5.488a3.659,3.659,0,0,0,1.262-.238,2.177,2.177,0,0,0,1.29-1.29,3.659,3.659,0,0,0,.238-1.262V8.4a3.458,3.458,0,0,0-.238-1.262Zm-5.3,7.491a3.485,3.485,0,0,1-3.485-3.494h0a3.494,3.494,0,1,1,3.485,3.494Zm3.659-6.3a.823.823,0,0,1,0-1.637h0a.823.823,0,0,1,0,1.637Z" transform="translate(-2 -2)" fill="#281f39"/></svg></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/vendors/jquery.js"></script>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script src="./assets/script.js"></script>
+</body>
+
+</html>
